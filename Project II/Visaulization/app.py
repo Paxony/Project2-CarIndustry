@@ -1,8 +1,10 @@
+#import libraries
 from flask import Flask, render_template, jsonify, request
 import pymongo
 
 app = Flask(__name__,static_folder="./static")
 
+#setting the route for each page 
 @app.route("/")
 def index():
     return render_template("index.html")

@@ -1,3 +1,4 @@
+// set the leaflet access
 mapboxgl.accessToken = 'pk.eyJ1Ijoib3NjYXJ6dSIsImEiOiJjazUzNWx0MGEwNTU0M2xwbmUyaWRvNWM4In0.uu2MB1W_FTjeI48jjaZ7GQ';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -7,7 +8,7 @@ var map = new mapboxgl.Map({
 });
 
 
-
+// build the map
 map.on("load", function() {
     map.addLayer({
         id: "US",
